@@ -7,6 +7,7 @@ module.exports = {
   entry: {
     index: Path.resolve(__dirname, '../src/scripts/index.js'),
     about: Path.resolve(__dirname, '../src/scripts/about.js'),
+    projects: Path.resolve(__dirname, '../src/scripts/projects.js'),
   },
   output: {
     path: Path.join(__dirname, '../build'),
@@ -32,6 +33,12 @@ module.exports = {
       inject: true,
       chunks: ['about'],
       filename: 'about'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/projects/index.html',
+      inject: true,
+      chunks: ['projects'],
+      filename: 'projects'
     }),
   ],
   resolve: {
