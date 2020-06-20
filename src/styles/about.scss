@@ -2,3 +2,117 @@
 
 @import "colors";
 @import "common";
+
+body {
+  overflow-y: scroll;
+}
+
+main {
+  section.name {
+    color: $TEXT_PRIMARY_COLOR;
+    // border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 70px;
+
+    img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+    }
+
+    hgroup {
+      margin-left: 50px;
+
+      h2 {
+        font-size: 34px;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: normal;
+        line-height: 42px;
+        margin-bottom: 20px;
+      }
+
+      small {
+        display: block;
+        font-size: 18px;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: normal;
+        line-height: 28px;
+      }
+    }
+
+    ul.icons {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      flex: 1;
+      // border: 1px solid red;
+      list-style: none;
+      margin-left: 10px;
+
+      li {
+        display: block;
+        width: 60px;
+        height: 60px;
+        box-sizing: border-box;
+        margin-left: 40px;
+      }
+    }
+  }
+
+  section.description {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 70px;
+
+    p {
+      display: flex;
+      flex: 1;
+      color: $TEXT_PRIMARY_COLOR;
+      font-size: 18px;
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 300;
+      line-height: 22px;
+    }
+
+    p:first-child {
+      margin-right: 60px; 
+    }
+  }
+
+  section.points {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    article {
+      width: 100%;
+      max-width: 700px;
+      margin-top: 70px;
+
+      h2 {
+        color: $TEXT_PRIMARY_COLOR;
+        font-size: 34px;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: normal;
+        line-height: 42px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        color: $TEXT_PRIMARY_COLOR;
+        font-size: 18px;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 300;
+        line-height: 22px;
+        margin-top: 30px;
+      }
+    }
+  }
+}
