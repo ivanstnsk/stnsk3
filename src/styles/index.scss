@@ -1,52 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
 
-$BG_COLOR: #1F2124;
-$HEADER_LINK_COLOR: rgba(255,255,255,0.6);
-$HEADER_LINK_HOVER_COLOR: #81AF65;
-$TEXT_PRIMARY_COLOR: rgba(255,255,255,0.6);
-$TEXT_MARKED_COLOR: #81AF65;
-$BUTTON_COLOR: #81AF65;
-$FOOTER_COLOR: rgba(255,255,255,0.2);
-
-html, body {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 100);
-}
-
-body {
-  background-color: $BG_COLOR;
-  font-family: sans-serif;
-  display: flex;
-  flex-direction: column;
-}
-
-header {
-  display: flex;
-  height: 100px;
-  align-items: center;
-  justify-content: center;
-
-  nav {
-    display: flex;
-    align-items: center;
-
-    a {
-      text-decoration: none;
-      color: $HEADER_LINK_COLOR;
-      margin-left: 20px;
-      margin-right: 20px;
-      transition: color 0.4s ease;
-
-      &:hover {
-        color: $HEADER_LINK_HOVER_COLOR;
-        transition: color 0.4s ease;
-      }
-    }
-  }
-}
+@import "colors";
+@import "common";
 
 main {
   display: flex;
@@ -129,12 +84,4 @@ main {
       box-shadow: none;
     }
   }
-}
-
-footer {
-  display: flex;
-  height: 50px;
-  align-items: center;
-  justify-content: center;
-  color: $FOOTER_COLOR;
 }
