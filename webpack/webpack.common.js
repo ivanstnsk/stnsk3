@@ -32,13 +32,13 @@ module.exports = {
       template: './src/about/index.html',
       inject: true,
       chunks: ['about'],
-      filename: 'about'
+      filename: 'about/index.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/projects/index.html',
       inject: true,
       chunks: ['projects'],
-      filename: 'projects'
+      filename: 'projects/index.html'
     }),
   ],
   resolve: {
