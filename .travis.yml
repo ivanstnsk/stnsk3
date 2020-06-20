@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+  - "stable"
+cache: npm
+
+install:
+  - yarn
+
+script:
+  - yarn build
+
+deploy:
+  provider: pages:git
+  skip-cleanup: true
+  token: $GITHUB_TOKEN
+  local_dir: build
+  edge: true # opt in to dpl v2
+  on:
+    branch: master
+  fqdn: stnsk.pro
