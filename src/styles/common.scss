@@ -47,6 +47,17 @@ header {
   }
 }
 
+h2 {
+  width: 100%;
+  color: $TEXT_PRIMARY_COLOR;
+  font-size: 34px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: normal;
+  line-height: 42px;
+  text-align: left;
+  margin: 0px;
+}
+
 main {
   display: flex;
   flex: 1;
