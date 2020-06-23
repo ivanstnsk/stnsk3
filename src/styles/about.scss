@@ -143,14 +143,40 @@ main {
     justify-content: flex-start;
     margin-top: 70px;
 
-    h2 {
-      width: 100%;
-      color: $TEXT_PRIMARY_COLOR;
-      font-size: 34px;
-      font-family: 'Quicksand', sans-serif;
-      font-weight: normal;
-      line-height: 42px;
-      text-align: left;
+    .title {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      h2 {
+        color: $TEXT_PRIMARY_COLOR;
+        font-size: 34px;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: normal;
+        line-height: 42px;
+        text-align: left;
+      }
+
+      a {
+        display: block;
+        text-decoration: none;
+        color: $SECTION_TITLE_LINK_COLOR;
+        font-size: 24px;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: normal;
+        line-height: 30px;
+        text-align: right;
+
+        &:hover {
+          color: $SECTION_TITLE_LINK_HOVER_COLOR;
+          transition: color 0.4s ease;
+        }
+  
+        &.active {
+          color: $SECTION_TITLE_LINK_ACTIVE_COLOR;
+        }
+      }
     }
 
     .container {
