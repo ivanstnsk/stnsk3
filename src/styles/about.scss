@@ -94,24 +94,41 @@ main {
     article {
       width: 100%;
       max-width: 700px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
       margin-top: 70px;
 
-      h2 {
-        color: $TEXT_PRIMARY_COLOR;
-        font-size: 34px;
-        font-family: 'Quicksand', sans-serif;
-        font-weight: normal;
-        line-height: 42px;
-        margin-bottom: 20px;
+      .icon {
+        width: 100px;
+        height: 100px;
+        min-width: 100px;
+        min-height: 100px;
+        display: block;
       }
 
-      p {
-        color: $TEXT_PRIMARY_COLOR;
-        font-size: 18px;
-        font-family: 'Quicksand', sans-serif;
-        font-weight: 300;
-        line-height: 22px;
-        margin-top: 30px;
+      .content {
+        display: flex;
+        flex-direction: column;
+        margin-left: 70px;
+        
+        h2 {
+          color: $TEXT_PRIMARY_COLOR;
+          font-size: 34px;
+          font-family: 'Quicksand', sans-serif;
+          font-weight: normal;
+          line-height: 42px;
+          margin-bottom: 20px;
+        }
+  
+        p {
+          color: $TEXT_PRIMARY_COLOR;
+          font-size: 18px;
+          font-family: 'Quicksand', sans-serif;
+          font-weight: 300;
+          line-height: 22px;
+          margin-top: 20px;
+        }
       }
     }
   }
