@@ -2,3 +2,12 @@
 
 @import "colors";
 @import "common";
+@import "projects-common";
+
+body {
+  overflow-y: scroll;
+}
+
+main {
+  margin-bottom: 70px;
+}
