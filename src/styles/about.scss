@@ -101,7 +101,6 @@ main {
       flex-direction: row;
       align-items: center;
       margin-top: 70px;
-      transition: transform 0.3s ease;
           
       &:hover {
         .icon {
@@ -116,6 +115,7 @@ main {
         min-width: 100px;
         min-height: 100px;
         display: block;
+        transition: transform 0.3s ease;
       }
 
       .content {
